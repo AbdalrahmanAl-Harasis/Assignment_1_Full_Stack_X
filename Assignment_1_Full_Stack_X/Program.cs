@@ -3,7 +3,6 @@ var reciteAmount = Convert.ToDecimal(Console.ReadLine());
 if (reciteAmount <= 0)
 {
     Console.WriteLine("Please Enter a Valid Price!");
-    return;
 }
 else if (reciteAmount >= 500)
 {
@@ -19,7 +18,6 @@ else if (reciteAmount >= 500)
     Console.WriteLine($"TOTAL:   {(reciteAmount - ((reciteAmount * 20) / 100))} JDs");
     Console.WriteLine("========================================");
     Console.WriteLine("Thank you for your purchase!");
-    return;
 }
 else if (reciteAmount >= 300 && reciteAmount <= 499)
 {
@@ -50,5 +48,4 @@ else
     Console.WriteLine($"TOTAL:   {reciteAmount} JDs");
     Console.WriteLine("========================================");
     Console.WriteLine("Thank you for your purchase!");
-    return;
 }
